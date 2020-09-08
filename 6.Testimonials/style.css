@@ -1,0 +1,58 @@
+body {
+    background-image: url("./img/contBcg-1.jpeg");
+    background-color: #585858;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+.container h2:first-child {
+    color: rgb(221, 164, 18);
+    text-transform: uppercase;
+}
+
+#card {
+    position: relative;
+}
+
+#name {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkgray;
+    min-width: 5vh;
+    min-height: 5vh;
+    border-radius: 50%;
+}
+
+#card > button {
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1d1d1d;
+}
+
+#card > button:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-125%, -50%);
+}
+
+#card > button:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(125%, -50%);
+}
+
+#starWars + p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
