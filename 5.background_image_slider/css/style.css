@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(133, 175, 253);
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-image: url("../img/contBcg-0.jpeg");
+    background-size: cover;
+    border: 0.5rem #1d7cb3 solid;
+    border-radius: 0.2rem;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+button:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+button:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+}
