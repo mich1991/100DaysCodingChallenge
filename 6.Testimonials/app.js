@@ -7,7 +7,7 @@ const description = document.querySelector('#description')
 const star = document.querySelector('#star')
 const starImg = `<img id="star" src="./img/star.svg" alt="*" style="height: 1rem;">`
 let customers = []
-let currentIndex = 3
+let currentIndex = 0
 
 class Customer {
     constructor(img, name, stars, desc) {
@@ -43,11 +43,11 @@ function customerDisplay(img, name, stars, desc) {
     description.innerText = desc
 
 }
-customerDisplay(customers[currentIndex].img, customers[currentIndex].name, customers[currentIndex].stars, customers[currentIndex].desc)
-
 function displayTransformer() {
     customerDisplay(customers[currentIndex].img, customers[currentIndex].name, customers[currentIndex].stars, customers[currentIndex].desc)
 }
+
+displayTransformer()
 
 prev.addEventListener('click', e => {
     e.preventDefault()
