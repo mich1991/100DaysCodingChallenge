@@ -120,10 +120,13 @@
 
     addButton.addEventListener('click', e => {
         e.preventDefault()
-        updateDisplay()
-        createTodo(input.value)
-        displayTodos()
-        setLocalStorage(todosArray)
+        if (input.value !== '') {
+            updateDisplay()
+            createTodo(input.value)
+            displayTodos()
+            setLocalStorage(todosArray)
+            input.value = ''
+        }
     })
 
     clearList.addEventListener('click', () => {
