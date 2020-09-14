@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(168, 168, 168);
+}
+
+.container {
+    height: 100vh;
+}
+
+.card {
+    width: 60%;
+    background-color: rgba(216, 210, 210, 0.555);
+}
+
+.taskDone {
+    text-decoration: line-through;
+    color: rgb(82, 82, 82);
+}
