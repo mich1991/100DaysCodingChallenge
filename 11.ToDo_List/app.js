@@ -72,7 +72,6 @@
     function createListElement(todo) {
         let element = document.createElement('li')
         element.classList.add('list-group-item')
-        element.setAttribute(`data-id`, `${todo.id}`)
         element.innerHTML = `<div class= 'col-sm-12 d-flex justify-content-between'>
             ${isFinished(todo)}
             <div>
