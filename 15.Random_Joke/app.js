@@ -21,4 +21,3 @@ getRandomJoke = async () => {
     }
 }
 
-getRandomJoke()
