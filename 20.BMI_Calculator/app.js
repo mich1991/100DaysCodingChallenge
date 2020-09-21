@@ -55,8 +55,6 @@ submit.addEventListener('click', e => {
     e.preventDefault()
     let bmi = calcBMI(height.value, weight.value)
     summary(bmi)
-    console.log(bmi)
-
     height.value = ''
     weight.value = ''
 })
