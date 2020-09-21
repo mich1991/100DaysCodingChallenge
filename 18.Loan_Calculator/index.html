@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/715a5f5522.js" crossorigin="anonymous"></script>
+    <title>Loan Calculator</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="card p-3">
+            <h1 class="card-title text-center">Loan Calculator</h1>
+            <!-- feedback -->
+            <div class="feedback d-none alert alert-danger text-capitalize">
+
+            </div>
+            <!-- loan inputs -->
+            <div class="card-body">
+                <label for="loanAmount">Loan Amount</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-hand-holding-usd text-success"></i></span>
+                    </div>
+                    <input type="number" class="form-control" placeholder="Loan Amount" id="loanAmount">
+                </div>
+                <label for="interestRate">Interest Rate %</label>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-receipt"></i></span>
+                    </div>
+                    <input type="number" class="form-control" placeholder="Interest rate %" id="interestRate">
+                </div>
+                <label for="monthsPay">Months to Pay</label>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="far fa-calendar-alt text-primary"></i></span>
+                    </div>
+                    <input type="number" class="form-control" placeholder="Months to Pay" id="monthsPay">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-primary w-50" id="submit">Submit</button>
+                </div>
+                <!-- loan calc output  -->
+                <div class="mt-3 text-center">
+                    <h2 class="text-capitalize mb-2">amount to pay per month</h2>
+                    <h3 id="output">You will starve</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
