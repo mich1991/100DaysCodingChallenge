@@ -96,7 +96,6 @@ youLose = (correctAnswer) => {
     setTimeout(() => result.parentNode.classList.add('d-none'), 3000)
 }
 
-
 success = () => {
     score.textContent === '0' ? score.textContent = 100 : score.textContent *= 5
     time.textContent = '20'
